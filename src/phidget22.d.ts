@@ -13464,9 +13464,7 @@ export declare enum VoltageRange {
 }
 
 /** @public */
-export declare class VoltageRatioInput extends VoltageRatioInputBase {
-  setOnVoltageRatioChangeHandler: any;
-}
+export declare class VoltageRatioInput extends VoltageRatioInputBase {}
 
 declare abstract class VoltageRatioInputBase extends PhidgetChannel {
   /**
