@@ -1,5 +1,5 @@
 //import { Connection, NetworkConnection, VoltageRatioInput } from "./phidget22";
-import * as phidget22 from "./phidget22";
+import * as phidget22 from "phidget22";
 
 export default class Pedal {
   private VARIATION = 0.05;
