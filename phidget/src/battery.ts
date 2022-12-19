@@ -1,4 +1,4 @@
-export class Battery {
+export default class Battery {
   private energy = 0;
 
   constructor() {}

@@ -1,7 +1,7 @@
-import { Battery } from "./battery";
-import { Pedal } from "./pedal";
+import Battery from "./battery";
+import Pedal from "./pedal";
 
-class Bike {
+export default class Bike {
   private pedal: Pedal = new Pedal();
   private battery: Battery = new Battery();
   private interval: number;
@@ -16,5 +16,3 @@ class Bike {
     }, 500);
   }
 }
-
-export const bike = new Bike();

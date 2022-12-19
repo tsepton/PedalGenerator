@@ -1,10 +1,15 @@
-import { Connection, NetworkConnection, VoltageRatioInput } from "./phidget22";
+//import { Connection, NetworkConnection, VoltageRatioInput } from "./phidget22";
+import * as phidget22 from "./phidget22";
 
-export class Pedal {
+export default class Pedal {
   private VARIATION = 0.05;
 
-  private sensor: VoltageRatioInput = new VoltageRatioInput();
-  private webServer: NetworkConnection = new Connection(8989, "localhost");
+  private sensor: phidget22.VoltageRatioInput =
+    new phidget22.VoltageRatioInput();
+  private webServer: phidget22.NetworkConnection = new phidget22.Connection(
+    8989,
+    "localhost"
+  );
 
   private totalVariation: number = 0;
   private lastReadLaps: number = 0;
