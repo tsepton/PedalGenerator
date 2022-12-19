@@ -13,7 +13,6 @@ class Bike {
   private handleCycling(): number {
     return window.setInterval(() => {
       this.battery.feed(this.pedal.lapsSinceLastRead);
-      console.log(this.battery);
     }, 500);
   }
 }
