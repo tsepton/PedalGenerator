@@ -1,7 +1,7 @@
 {
-  "name": "my-webpack-project",
+  "name": "bikelectrity",
   "version": "1.0.0",
-  "description": "My webpack project",
+  "description": "Fake bike electricity generator",
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve --mode development --env development",
